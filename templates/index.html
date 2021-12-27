@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,100&display=swap">    
+<script src="https://kit.fontawesome.com/177fcab58b.js" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width initial-scale=1.0">
+<script type="text/javascript" src="{{ url_for('static', filename='scripts.js') }}"></script>
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<head>
+    <title>Robot Homepage</title>
+</head>
+
+<body class="dark-theme || light-theme">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <h3 class="mt-5">Robot Homepage</h3>                                         
+                <div id="div2">
+                <img src="{{ url_for('video_feed') }}" width="500" height="350"> <div id="div2">
+                    <button class="grow" type="button" onclick="activeStop(); checkIfDisabledStop(); btnName();" id="stop" name="stop"><i class="fas fa-stop"></i></button>
+                    <button class="grow" type="button" onclick="activeLine(); checkIfDisabledPerson();" id="line" name="line"><i class="fas fa-grip-lines"></i></button>
+                    <button class="grow" type="button" onclick="activePerson(); checkIfDisabled();" id="person" name="person"><i class="fas fa-user-alt"></i></button>
+                    <button class="grow" type="button" id="dark" onclick="darkMode()"><i class="fas fa-moon"></i></button>
+                    </div>
+                </div>
+                <br><p>Live feed from robot camera</p>
+            </div>
+        </div>
+    </div>
+</body>

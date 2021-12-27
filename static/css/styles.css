@@ -1,0 +1,97 @@
+h3 {
+    font-family : "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0%;
+}
+
+p {
+    font-family: "Montserrat";
+    font-weight: 100;
+    font-style: italic;
+    font-weight: bold;
+    padding: 0%;
+    margin: 0%;
+    margin-top: 0%;
+    height: 50px;
+    font-size: 15px;
+}
+
+button {
+    margin-left: 50px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 50px;
+    margin-bottom: 0%;
+    display: block;
+    margin-top: 50px;
+}
+#div2 {
+    display: inline-block;
+}
+
+.active {
+    opacity: 0.6;
+}
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+}
+
+body {
+    background-color: white;
+    color: black;
+    overflow: hidden;
+}
+
+.dark-mode .fa-stop {
+    color: white;
+}
+
+.dark-mode .fa-grip-lines {
+    color: white;
+}
+
+.dark-mode .fa-user-alt {
+    color: white;
+}
+
+.dark-mode .fa-moon {
+    color: white;
+}
+
+
+
+.dark-mode {
+    color: white;
+    background-color: #121212;
+}
+
+
+video {
+    width: 50%;
+}
+
+@media all and (max-width: 500px) {
+    h3 {
+        font-size: 20px;
+    }
+
+    img {
+        max-width: 300px;
+        max-height: 200px;
+    }
+
+    button {
+        margin-top: 20px;
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+}
